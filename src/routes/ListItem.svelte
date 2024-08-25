@@ -1,23 +1,23 @@
 <script>
 	import { Button, Col, Row } from '@sveltestrap/sveltestrap';
-	export let value, name;
+	export let id, name;
 </script>
 
 <Col xs="4" sm="4">
 	<div class="list-item">
-		<h1>{value}</h1>
+		<h1>{id}</h1>
 		<h1>{name}</h1>
 	</div>
 </Col>
 
 <style>
 	.list-item {
-		width: 100%;
-		height: 300px;
+		width: 200px;
+		height: 200px;
 		background-color: gray;
-		margin: 10px;
+		/* margin: 10px; */
 		display: flex;
-		flex-direction: column;
+		/* flex-direction: column; */
 		justify-content: center;
 		align-items: center;
 	}
